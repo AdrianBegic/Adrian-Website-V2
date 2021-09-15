@@ -3,7 +3,9 @@
    text-align: center;
  } 
   
-  
+  html {
+    width: fit-content;
+  }
   h1 {
     font-size: 4rem;
   }
@@ -77,6 +79,7 @@
 
 .layer1 {
   background-image: url('./svg/layer1.svg');
+  display: fixed;
 }
 
 .layer2 {
