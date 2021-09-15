@@ -9,7 +9,10 @@ h1 {
 p {
   font-size: 1.5rem;
   text-align: center;
-  padding: 20px;
+  padding-bottom: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+
 }
 
 body {
@@ -58,7 +61,6 @@ section {
 .dark2 {
   background: #001220;
   padding: 0;
-  padding-bottom: 12%;
   margin: 0;
 }
 
@@ -125,4 +127,45 @@ section {
 
 #b {
   margin-top: 100%;
+}
+
+a{
+  color: white;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #de649f;
+}
+
+.bottom-container {
+  padding: 50px 0 20px;
+  margin-top: 20px;
+  z-index: 6;
+  position: relative;
+  width: 100%;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.footer-link {
+  font-size: 30px;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    margin-top: 60px;
+}
+
+.code-img {
+  width: 200px;
+  float: left;
+  margin-right: 30px;
+}
+
+.profile-img {
+  width: 400px;
 }
