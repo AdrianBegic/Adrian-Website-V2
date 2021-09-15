@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script src="https://kit.fontawesome.com/4b7d927387.js" crossorigin="anonymous"></script>
+    <title>Adrian Begic</title>
+</head>
+
+<body>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="#"><li><i class="fas fa-home"></i></li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </div>
+      </nav>
+
+    <section class="blue">
+        <div class="blob-content">
+        <h1>I'm Adrian</h1>
+        <p>A Front End Developer</p>
+        </div>
+        <svg 
+        class="blob-motion"
+        id="visual" 
+        viewBox="0 0 960 300" 
+        width="960" 
+        height="300" 
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" 
+        version="1.1">
+            
+        <g transform="translate(479.5454890470703 127.9508404036711)">
+                <path 
+                id="blob1" 
+                d="M83.1 -77.1C101.6 -64.6 106.3 -32.3 107 0.7C107.7 33.7 104.4 67.4 85.9 92.4C67.4 117.4 33.7 133.7 7.3 126.4C-19.1 119.1 -38.2 88.2 -59.4 63.2C-80.5 38.2 -103.8 19.1 -106 -2.2C-108.2 -23.6 -89.5 -47.1 -68.3 -59.6C-47.1 -72.1 -23.6 -73.6 4.4 -77.9C32.3 -82.3 64.6 -89.6 83.1 -77.1"
+                fill="#2518db"
+                ></path>
+            </g>
+            <g transform="translate(495.8144395938632 145.9229293875844)" style="visibility: hidden;">
+                <path 
+                id="blob2" 
+                d="M61 -63.7C81 -41 100.5 -20.5 99.1 -1.4C97.7 17.7 75.4 35.4 55.4 60.4C35.4 85.4 17.7 117.7 -7.9 125.6C-33.5 133.5 -66.9 116.9 -91.3 91.9C-115.6 66.9 -130.8 33.5 -130.8 0C-130.8 -33.5 -115.6 -66.9 -91.3 -89.6C-66.9 -112.3 -33.5 -124.1 -6.5 -117.7C20.5 -111.2 41 -86.3 61 -63.7" 
+                fill="#2518db">
+                </path>
+            </g>
+            <g transform="translate(489.5154670072436 139.6594999940907)" style="visibility: hidden;">
+                <path 
+                id="blob3" 
+                d="M51.6 -59.8C64.1 -39.1 69.6 -19.6 76.5 7C83.5 33.5 91.9 66.9 79.4 91.9C66.9 116.9 33.5 133.5 7.4 126C-18.6 118.6 -37.2 87.2 -57.4 62.2C-77.6 37.2 -99.3 18.6 -103.9 -4.6C-108.5 -27.8 -96 -55.6 -75.8 -76.3C-55.6 -97 -27.8 -110.5 -4.1 -106.4C19.6 -102.2 39.1 -80.5 51.6 -59.8" 
+                fill="#2518db">
+            </path>
+            </g>
+        </svg>
+
+        <script> 
+            const tween = KUTE.fromTo(
+                '#blob1',
+                { path: '#blob1' },
+                { path: '#blob2' },
+                { repeat: 999, duration: 3500, yoyo: true }
+            )
+
+            tween.start()
+        </script>
+    </section>
+    <div class="spacer layer1"></div>
+    <section class="dark">
+        <h1>About Me</h1>
+        <p>Quod cupiditate aut molestias! Illum quas dignissimos laudantium sunt beatae asperiores architecto eos
+            dolores ipsam maxime, reprehenderit provident nulla et dolor eligendi. Veniam earum mollitia est
+            perspiciatis tempore quis quae?</p>
+    </section>
+    <div class="spacer layer2"></div>
+    <div class="curve1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" class="shape-fill"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" class="shape-fill"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <section class="pink">
+        <h1>Work Experience</h1>
+        <p>Possimus hic ad assumenda ratione reprehenderit ullam voluptate natus quisquam ipsum impedit neque dicta
+            repellat dolor aliquid praesentium, autem quod consequatur culpa. Iste, distinctio obcaecati eaque
+            consequuntur fugiat animi earum?</p>
+    </section>
+    <div class="spacer layer3"></div>
+    <section class="dark">
+        <h1>Thats nice</h1>
+        <p>Neque obcaecati accusamus corrupti, reiciendis deserunt reprehenderit, quae a tenetur molestiae laudantium
+            veritatis natus repellendus commodi aliquam voluptatum vel voluptas similique perspiciatis vero repudiandae
+            maxime numquam ut odio sapiente. Debitis.</p>
+    </section>
+</body>
+
+</html>
