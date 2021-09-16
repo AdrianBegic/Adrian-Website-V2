@@ -167,9 +167,9 @@ a:hover {
 .code-img {
   width: 200px;
   float: left;
-  margin-right: 30px;
 }
 
 .profile-img {
   width: 400px;
+  align-items: center;
 }
