@@ -75,19 +75,23 @@ section {
 .layer1 {
   background-image: url("./svg/layer1.svg");
   display: fixed;
+  width: 100%;
 }
 
 .layer2 {
   background-image: url("./svg/layer2.svg");
   margin-top: 200px;
+  width: 100%;
 }
 
 .layer3 {
   background-image: url("./svg/layer3.svg");
+  width: 100%;
 }
 
 .layer4 {
   background-image: url("./svg/layer4.svg");
+  width: 100%;
 }
 
 .blob-motion {
