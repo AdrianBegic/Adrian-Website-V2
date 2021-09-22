@@ -8,9 +8,8 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 3rem;
   text-align: center;
-  padding-bottom: 100px;
   margin-left: 100px;
   margin-right: 100px;
 
@@ -47,13 +46,12 @@ section {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-bottom: 12%;
 }
 
 .dark {
+  display: flex;
   background: #001220;
   margin: 0;
-  padding-top: 12%;
   width: 100%;
   right: 0;
   left: 0;
@@ -81,7 +79,6 @@ section {
 
 .layer2 {
   background-image: url("./svg/layer2.svg");
-  margin-top: 200px;
   width: 100%;
 }
 
@@ -125,7 +122,6 @@ section {
 }
 
 #a {
-  position: fixed;
   top: 0;
   z-index: -99;
 }
@@ -138,7 +134,6 @@ a {
   color: white;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
-  margin: 10px 20px;
   text-decoration: none;
 }
 
@@ -169,8 +164,22 @@ a:hover {
 }
 
 .profile-img {
-  width: 400px;
-  align-items: center;
+  width: 600px;
+  float: left;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  padding-left: 200px;
+}
+
+ .about {
+   width: 100%;
+   padding-bottom: 0;
+  font-size: 1.8rem;
+}
+
+.text {
+  max-width: 80%;
+  margin: 200px 100px 100px 600px;
 }
 
 
@@ -227,3 +236,92 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:#CC4949; }
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: #1a1a1a;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+  width: 60%;
+  padding-top: 100px;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 34rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
